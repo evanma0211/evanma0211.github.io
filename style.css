@@ -1,0 +1,419 @@
+/* =====================================================
+   Yifan Ma — Academic Personal Page
+   ===================================================== */
+
+/* --- Reset & Base --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:    #1a2a4a;
+  --blue:    #2c5f8a;
+  --accent:  #c0392b;      /* subtle red accent for Q1 tags, etc. */
+  --gold:    #b8860b;
+  --light:   #f5f7fa;
+  --border:  #dde3ec;
+  --text:    #2d2d2d;
+  --muted:   #666;
+  --max-w:   900px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text);
+  background: #fff;
+}
+
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* --- Layout --- */
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 2rem; }
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+header {
+  background: var(--navy);
+  color: #fff;
+  padding: 3rem 0 2.5rem;
+}
+
+.header-inner {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+/* --- Photo --- */
+.photo-wrap {
+  flex-shrink: 0;
+}
+.photo-wrap img {
+  width: 210px;
+  height: 270px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 6px;
+  border: 3px solid rgba(255,255,255,0.3);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  display: block;
+}
+
+/* --- Bio block --- */
+.bio h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
+}
+.bio h1 .chinese {
+  font-family: 'Playfair Display', 'Noto Serif SC', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-left: 0.6rem;
+}
+.position {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #aac4e0;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.affil   { font-size: 0.95rem; opacity: 0.9; }
+.affil-sub { font-size: 0.85rem; opacity: 0.6; }
+
+/* --- Contact links --- */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.contact-links a {
+  color: #aac4e0;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.2s;
+}
+.contact-links a:hover { color: #fff; text-decoration: none; }
+.contact-links svg {
+  width: 15px; height: 15px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* --- Stat badges --- */
+.stat-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.badge {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #e0eaf5;
+  font-size: 0.78rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+}
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+nav {
+  background: var(--blue);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+nav .container {
+  display: flex;
+  gap: 0;
+}
+nav a {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.2rem;
+  display: block;
+  transition: background 0.2s, color 0.2s;
+}
+nav a:hover {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* =====================================================
+   MAIN CONTENT
+   ===================================================== */
+main { padding: 3rem 0; }
+
+section {
+  margin-bottom: 3.5rem;
+  padding-top: 1rem;  /* offset for sticky nav */
+}
+
+section h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--navy);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.01em;
+}
+
+section p { margin-bottom: 0.8rem; color: var(--text); }
+section p:last-child { margin-bottom: 0; }
+
+.subsection-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 1.5rem 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+/* =====================================================
+   RESEARCH INTEREST CARDS
+   ===================================================== */
+.interest-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.interest-card {
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--blue);
+  padding: 1rem 1.2rem;
+  border-radius: 2px;
+}
+.interest-card h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.35rem;
+}
+.interest-card p { font-size: 0.875rem; color: var(--muted); margin: 0; }
+
+/* =====================================================
+   PUBLICATIONS
+   ===================================================== */
+.note { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+
+.pub-list {
+  list-style: none;
+  counter-reset: pub-counter;
+  padding: 0;
+}
+
+.pub-item {
+  counter-increment: pub-counter;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+}
+.pub-item:first-child { border-top: 1px solid var(--border); }
+.pub-item::before {
+  content: counter(pub-counter);
+  position: absolute;
+  left: 0.75rem;
+  top: 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+  width: 1.5rem;
+  text-align: right;
+}
+
+.pub-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.975rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.2rem;
+  line-height: 1.45;
+}
+.pub-authors { font-size: 0.875rem; color: var(--muted); margin-bottom: 0.15rem; }
+.pub-venue   { font-size: 0.875rem; color: var(--text);  margin-bottom: 0.4rem; }
+
+/* Tags */
+.pub-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  color: #555;
+  letter-spacing: 0.03em;
+}
+.tag-q1   { border-color: var(--blue); color: var(--blue); }
+.tag-hc   { border-color: var(--gold); color: var(--gold); background: #fdfae8; }
+.tag-fmsb { border-color: #6a3d7a; color: #6a3d7a; }
+
+/* Citation badge */
+.tag-cite {
+  border-color: #2e7d32;
+  color: #2e7d32;
+  background: #f1f8f1;
+  min-width: 60px;
+  text-align: center;
+}
+.cite-spinner {
+  display: inline-block;
+  width: 10px; height: 10px;
+  border: 2px solid #aaa;
+  border-top-color: #2c5f8a;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Publication title links */
+.pub-title a {
+  color: var(--navy);
+  text-decoration: none;
+}
+.pub-title a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+/* Working papers */
+.working-papers {
+  list-style: disc;
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+.working-papers li { padding: 0.3rem 0; }
+
+/* =====================================================
+   EDUCATION TIMELINE
+   ===================================================== */
+.timeline { position: relative; padding-left: 1.5rem; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: var(--border);
+}
+
+.tl-item {
+  position: relative;
+  padding: 0 0 1.8rem 1.5rem;
+}
+.tl-dot {
+  position: absolute;
+  left: -0.45rem;
+  top: 0.45rem;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--blue);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px var(--blue);
+}
+.tl-date   { font-size: 0.8rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.1rem; }
+.tl-degree { font-weight: 600; color: var(--navy); font-size: 0.95rem; }
+.tl-school { font-size: 0.9rem; color: var(--text); }
+.tl-note   { font-size: 0.82rem; color: var(--muted); font-style: italic; }
+
+/* =====================================================
+   AWARDS
+   ===================================================== */
+.award-list {
+  list-style: none;
+  padding: 0;
+}
+.award-list li {
+  font-size: 0.9rem;
+  padding: 0.3rem 0 0.3rem 1.2rem;
+  position: relative;
+  color: var(--text);
+  border-bottom: 1px solid #f0f0f0;
+}
+.award-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-size: 0.75rem;
+  top: 0.4rem;
+}
+
+/* =====================================================
+   SKILLS
+   ===================================================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.skills-grid div {
+  background: var(--light);
+  border: 1px solid var(--border);
+  padding: 1rem 1.2rem;
+  border-radius: 2px;
+}
+.skills-grid h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--navy);
+  margin-bottom: 0.4rem;
+}
+.skills-grid p { font-size: 0.875rem; color: var(--muted); margin: 0; }
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+footer {
+  background: var(--navy);
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  padding: 1.8rem 0;
+  font-size: 0.85rem;
+}
+footer a { color: rgba(255,255,255,0.75); }
+footer a:hover { color: #fff; }
+footer p + p { margin-top: 0.3rem; }
+.updated { font-size: 0.78rem; opacity: 0.5; }
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+@media (max-width: 680px) {
+  .header-inner { flex-direction: column; align-items: center; text-align: center; }
+  .contact-links { justify-content: center; }
+  .stat-badges   { justify-content: center; }
+  .interest-grid { grid-template-columns: 1fr; }
+  .skills-grid   { grid-template-columns: 1fr; }
+  nav a { padding: 0.7rem 0.8rem; font-size: 0.78rem; }
+}
