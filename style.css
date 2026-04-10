@@ -608,7 +608,7 @@ section h2::before {
   padding: 0 0.2rem;
 }
 .abstract-panel.open {
-  max-height: 300px;
+  max-height: 1200px;
   padding: 0.9rem 0.2rem 0.2rem;
 }
 
