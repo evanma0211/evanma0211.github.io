@@ -13,7 +13,10 @@
   <nav class="topnav">
     <div class="nav-inner">
       <a href="#about" class="nav-brand">HomePage</a>
-      <div class="nav-links">
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
         <a href="#about">About</a>
         <a href="#news">News</a>
         <a href="#publications">Publications</a>
@@ -523,6 +526,23 @@
   </footer>
 
   <script>
+    // ── Hamburger menu ───────────────────────────────────────────
+    (function () {
+      const btn   = document.getElementById('nav-hamburger');
+      const links = document.getElementById('nav-links');
+      if (!btn || !links) return;
+      btn.addEventListener('click', () => {
+        const open = btn.classList.toggle('open');
+        links.classList.toggle('open', open);
+      });
+      links.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          btn.classList.remove('open');
+          links.classList.remove('open');
+        });
+      });
+    })();
+
     // ── Abstract toggles ──────────────────────────────────────
     document.querySelectorAll('.abstract-btn').forEach(btn => {
       btn.addEventListener('click', () => {
