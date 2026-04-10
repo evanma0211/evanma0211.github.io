@@ -556,6 +556,15 @@
     // ── News show more / show less ────────────────────────────
     const newsExtras = document.querySelectorAll('.news-extra');
     const newsToggle = document.getElementById('news-toggle');
+
+    function collapseNews() {
+      newsExtras.forEach(el => { el.style.display = 'none'; });
+      if (newsToggle) {
+        newsToggle.textContent = 'Show more ↓';
+        newsToggle.dataset.expanded = 'false';
+      }
+    }
+
     if (newsToggle && newsExtras.length) {
       newsToggle.addEventListener('click', () => {
         const expanded = newsToggle.dataset.expanded === 'true';
@@ -566,6 +575,10 @@
         newsToggle.dataset.expanded = String(!expanded);
       });
     }
+
+    // Collapse news extras whenever the News nav link is clicked
+    document.querySelector('.nav-links a[href="#news"]')
+      ?.addEventListener('click', collapseNews);
 
     // ── Active nav link via IntersectionObserver ─────────────────
     (function () {
