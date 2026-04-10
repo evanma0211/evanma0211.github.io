@@ -5,345 +5,603 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yifan Ma — Shanghai University</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- ===== HEADER / HERO ===== -->
-  <header>
-    <div class="container header-inner">
-      <div class="photo-wrap">
-        <img src="my%20photo.jpg" alt="Yifan Ma" />
+  <!-- ===== TOP NAVIGATION ===== -->
+  <nav class="topnav">
+    <div class="nav-inner">
+      <a href="#about" class="nav-brand">HomePage</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#working-papers">Working Papers</a>
+        <a href="#awards">Awards</a>
       </div>
-      <div class="bio">
-        <h1>Yifan Ma <span class="chinese">马一凡</span></h1>
-        <p class="position">Ph.D. Candidate &nbsp;|&nbsp; Management Science and Engineering</p>
-        <p class="affil">School of Management, Shanghai University</p>
-        <p class="affil-sub">No. 99 Shangda Road, Baoshan District, Shanghai 200444, P.R. China</p>
-
-        <div class="contact-links">
-          <a href="mailto:mayifan693@163.com">
-            <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            mayifan693@163.com
-          </a>
-          <a href="https://orcid.org/0009-0002-7980-533X" target="_blank">
-            <svg viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.9-1.872 3.9-3.722 0-1.603-1.106-3.722-3.853-3.722h-2.344z"/></svg>
-            ORCID: 0009-0002-7980-533X
-          </a>
-          <a href="https://scholar.google.com/citations?user=Wcre0kgAAAAJ" target="_blank">
-            <svg viewBox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5 12 0z"/></svg>
-            Google Scholar
-          </a>
-          <a href="Yifan_Ma_CV.pdf" target="_blank">
-            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM9.5 17H8v-5h1.5c1.38 0 2.5 1.12 2.5 2.5S10.88 17 9.5 17zm0-3.75H9.25v2.5H9.5c.69 0 1.25-.56 1.25-1.25S10.19 13.25 9.5 13.25zM13 17h-1.5v-5H13c.83 0 1.5.67 1.5 1.5v2c0 .83-.67 1.5-1.5 1.5zm-.25-3.75v2.5h.25c.14 0 .25-.11.25-.25v-2c0-.14-.11-.25-.25-.25h-.25zm3.75 0H15v1h1.5v1.25H15V17h-1.25v-5h3v1.25z"/></svg>
-            Curriculum Vitae
-          </a>
-        </div>
-
-        <div class="stat-badges">
-          <span class="badge">5 Publications</span>
-          <span class="badge">125+ Citations</span>
-          <span class="badge">h-index: 5</span>
-          <span class="badge">CSC Fellow 2025–2027</span>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- ===== NAVIGATION ===== -->
-  <nav>
-    <div class="container">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#education">Education</a>
-      <a href="#awards">Awards</a>
     </div>
   </nav>
 
-  <main class="container">
+  <!-- ===== HERO / ABOUT ===== -->
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="hero-inner">
 
-    <!-- ===== ABOUT ===== -->
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I am a Ph.D. candidate in Management Science and Engineering at the
-        <a href="https://glxy.shu.edu.cn/" target="_blank">School of Management, Shanghai University</a>,
-        where I am expected to graduate in June 2027, under the supervision of
-        Prof. <a href="https://ms.shu.edu.cn/info/1257/15966.htm" target="_blank">Ying Ji</a>.
-        I hold a B.Sc. in Management Science from the University of Shanghai for Science and Technology (2022)
-        and an M.Sc. in Management Science from Shanghai University (2024) as part of an integrated
-        master's–Ph.D. programme.
-      </p>
-      <p>
-        My research centres on <strong>group decision-making</strong>, <strong>consensus reaching</strong>,
-        and <strong>robust / distributionally robust optimisation</strong> under uncertainty. I am also
-        interested in integrating computational intelligence and machine learning with group
-        decision-making problems. My work has appeared in top-tier Q1 journals including
-        <em>Information Fusion</em> (IF 14.1), <em>Applied Soft Computing</em>, and <em>Information Sciences</em>.
-      </p>
-      <p>
-        Supported by the <strong>China Scholarship Council (CSC) Fellowship</strong> (2025–2027), I am
-        currently a visiting Ph.D. researcher at the
-        <a href="https://www.ujaen.es/" target="_blank">University of Jaén</a>, Spain, working under the
-        joint supervision of
-        Prof. <a href="https://www.ujaen.es/departamentos/dinformatica/contactos/martinez-lopez-luis" target="_blank">Luis Martínez López</a>,
-        Prof. <a href="https://scholar.google.com/citations?user=qTB0f40AAAAJ&hl=en" target="_blank">Bapi Dutta</a>,
-        and
-        Prof. <a href="https://scholar.google.com/citations?user=t4YyUEEAAAAJ&hl=es" target="_blank">Rosa M. Rodríguez</a>.
-      </p>
-    </section>
+        <!-- Left: Identity -->
+        <div class="hero-left">
+          <div class="avatar">
+            <img src="my%20photo.jpg" alt="Yifan Ma" />
+          </div>
+          <h1 class="hero-name">Yifan Ma</h1>
+          <span class="hero-chinese">马一凡</span>
+          <p class="hero-role">Ph.D. Candidate</p>
+          <p class="hero-dept">Management Science &amp; Engineering</p>
+          <p class="hero-inst">School of Management<br>Shanghai University</p>
 
-    <!-- ===== RESEARCH INTERESTS ===== -->
-    <section id="research">
-      <h2>Research Interests</h2>
-      <div class="interest-grid">
-        <div class="interest-card">
-          <h3>Group Decision-Making</h3>
-          <p>Consensus reaching processes, expert opinion aggregation, and feedback mechanisms in multi-agent settings.</p>
+          <!-- Vertical contact list -->
+          <div class="hero-contact">
+            <a href="mailto:mayifan693@163.com" class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>mayifan693@163.com</span>
+            </a>
+            <a href="https://orcid.org/0009-0002-7980-533X" target="_blank" class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.9-1.872 3.9-3.722 0-1.603-1.106-3.722-3.853-3.722h-2.344z"/></svg>
+              <span>0009-0002-7980-533X</span>
+            </a>
+            <a href="https://scholar.google.com/citations?user=Wcre0kgAAAAJ" target="_blank" class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5 12 0z"/></svg>
+              <span>Google Scholar</span>
+            </a>
+            <a href="Yifan_Ma_CV.pdf" target="_blank" class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM9.5 17H8v-5h1.5c1.38 0 2.5 1.12 2.5 2.5S10.88 17 9.5 17zm0-3.75H9.25v2.5H9.5c.69 0 1.25-.56 1.25-1.25S10.19 13.25 9.5 13.25zM13 17h-1.5v-5H13c.83 0 1.5.67 1.5 1.5v2c0 .83-.67 1.5-1.5 1.5zm-.25-3.75v2.5h.25c.14 0 .25-.11.25-.25v-2c0-.14-.11-.25-.25-.25h-.25zm3.75 0H15v1h1.5v1.25H15V17h-1.25v-5h3v1.25z"/></svg>
+              <span>Curriculum Vitae</span>
+            </a>
+          </div>
+
         </div>
-        <div class="interest-card">
-          <h3>Robust Optimisation</h3>
-          <p>Robust and distributionally robust models for decision problems with cost uncertainty and risk aversion.</p>
-        </div>
-        <div class="interest-card">
-          <h3>Social Network Analysis</h3>
-          <p>Opinion dynamics and trust-based consensus formation in large-scale social network group decision-making.</p>
-        </div>
-        <div class="interest-card">
-          <h3>Uncertainty Quantification</h3>
-          <p>Modelling ambiguity in expert preferences, adjustment costs, and failure-mode analysis under uncertainty.</p>
+
+        <!-- Right: Biography + Meta + Skills -->
+        <div class="hero-right">
+
+          <div class="hero-bio">
+            <h2>Welcome!</h2>
+            <p>
+              I am a Ph.D. candidate in Management Science and Engineering at the
+              <a href="https://glxy.shu.edu.cn/" target="_blank">School of Management, Shanghai University</a>,
+              with expected graduation in June 2027, under the supervision of
+              Prof. <a href="https://ms.shu.edu.cn/info/1257/15966.htm" target="_blank">Ying Ji</a>.
+              I hold a B.Sc. in Management Science from USST (2022) and am currently in an integrated
+              master's–Ph.D. programme at Shanghai University.
+            </p>
+            <p>
+              My research focuses on <strong>group decision-making</strong>, <strong>consensus reaching</strong>,
+              and <strong>robust optimization</strong> under uncertainty, with growing interests in
+              computational intelligence and machine learning. My work has appeared in top-tier Q1 journals
+              including <em>Information Fusion</em>, <em>Applied Soft Computing</em>,
+              and <em>Information Sciences</em>.
+            </p>
+            <p>
+              Supported by the <strong>China Scholarship Council Fellowship</strong> (2025–2027),
+              I am currently a visiting researcher at the
+              <a href="https://www.ujaen.es/" target="_blank">University of Jaén</a>, Spain,
+              under the joint supervision of
+              Prof. <a href="https://www.ujaen.es/departamentos/dinformatica/contactos/martinez-lopez-luis" target="_blank">Luis Martínez López</a>,
+              Prof. <a href="https://scholar.google.com/citations?user=qTB0f40AAAAJ&hl=en" target="_blank">Bapi Dutta</a>, and
+              Prof. <a href="https://scholar.google.com/citations?user=t4YyUEEAAAAJ&hl=es" target="_blank">Rosa M. Rodríguez</a>.
+            </p>
+          </div>
+
+          <div class="hero-meta">
+
+            <!-- Research Interests -->
+            <div id="research">
+              <h3 class="meta-heading">
+                <svg class="meta-icon" viewBox="0 0 24 24">
+                  <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/>
+                </svg>
+                Research Interests
+              </h3>
+              <ul class="interests-list">
+                <li>Group Decision-Making and Consensus Reaching</li>
+                <li>Robust and Distributionally Robust Optimization</li>
+                <li>Social Network Analysis in Group Decision-Making</li>
+                <li>Uncertainty Quantification and Risk Analysis</li>
+              </ul>
+            </div>
+
+            <!-- Education -->
+            <div id="education">
+              <h3 class="meta-heading">
+                <svg class="meta-icon" viewBox="0 0 24 24">
+                  <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+                </svg>
+                Education
+              </h3>
+              <ul class="edu-timeline">
+                <li class="edu-tl-item">
+                  <span class="edu-tl-year">2022.09 – 2027.06</span>
+                  <span class="edu-tl-degree">Ph.D. Candidate, Management Science</span>
+                  <span class="edu-tl-school">Shanghai University (integrated programme)</span>
+                </li>
+                <li class="edu-tl-item">
+                  <span class="edu-tl-year">2018.09 – 2022.06</span>
+                  <span class="edu-tl-degree">B.Sc., Management Science</span>
+                  <span class="edu-tl-school">University of Shanghai for Science and Technology</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ===== PUBLICATIONS ===== -->
-    <section id="publications">
-      <h2>Publications</h2>
-      <p class="note">* denotes corresponding author</p>
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="site-main">
+    <div class="container">
 
-      <ol class="pub-list">
+      <!-- NEWS -->
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news-timeline">
 
-        <li class="pub-item">
-          <div class="pub-title">
-            <a href="https://doi.org/10.1016/j.inffus.2023.101866" target="_blank">
-              The robust maximum expert consensus model with risk aversion
-            </a>
-          </div>
-          <div class="pub-authors">Ji Y, <strong>Ma Y</strong>*</div>
-          <div class="pub-venue">
-            <em>Information Fusion</em>, 2023, 99: 101866
-          </div>
-          <div class="pub-tags">
-            <span class="tag tag-hc">Highly Cited Paper</span>
-            <span class="tag">IF: 14.1</span>
-            <span class="tag tag-q1">Q1</span>
-          </div>
-        </li>
+          <li class="news-tl-item">
+            <div class="news-tl-icon icon-paper">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 13h8v1.5H8V13zm0 3.5h5v1.5H8V16.5z"/></svg>
+            </div>
+            <span class="news-tl-date date-paper">2026.01</span>
+            <p class="news-tl-text">Paper accepted in <em>Group Decision and Negotiation</em> — "A combinational consensus model-based feedback mechanism for group decision-making with uncertain adjustment costs."</p>
+          </li>
 
-        <li class="pub-item">
-          <div class="pub-title">
-            <a href="https://doi.org/10.1016/j.asoc.2024.111430" target="_blank">
-              Robust maximum expert consensus model with adjustment path under uncertain environment
-            </a>
-          </div>
-          <div class="pub-authors"><strong>Ma Y</strong>, Ji Y, Wijekoon C</div>
-          <div class="pub-venue">
-            <em>Applied Soft Computing</em>, 2024, 155: 111430
-          </div>
-          <div class="pub-tags">
-            <span class="tag">IF: 7.2</span>
-            <span class="tag tag-q1">Q1</span>
-          </div>
-        </li>
+          <li class="news-tl-item">
+            <div class="news-tl-icon icon-position">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <span class="news-tl-date date-position">2025.09</span>
+            <p class="news-tl-text">Commenced CSC-funded visiting researcher position at the <a href="https://www.ujaen.es/" target="_blank">University of Jaén</a>, Spain.</p>
+          </li>
 
-        <li class="pub-item">
-          <div class="pub-title">
-            <a href="https://doi.org/10.1016/j.inffus.2024.102403" target="_blank">
-              Maximum expert consensus model with uncertain adjustment costs for social network group decision making
-            </a>
-          </div>
-          <div class="pub-authors"><strong>Ma Y</strong>, Ji Y, Qu D, Zhang X, Wang L</div>
-          <div class="pub-venue">
-            <em>Information Fusion</em>, 2024, 108: 102403
-          </div>
-          <div class="pub-tags">
-            <span class="tag">IF: 14.1</span>
-            <span class="tag tag-q1">Q1</span>
-          </div>
-        </li>
+          <li class="news-tl-item">
+            <div class="news-tl-icon icon-award">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <span class="news-tl-date date-award">2025.05</span>
+            <p class="news-tl-text">Received <strong>Third Prize</strong> at the 6th Annual Academic Conference of the Intelligent Decision and Game Branch of the Chinese Society of Optimization, Overall Planning Law and Economic Mathematics — Hefei.</p>
+          </li>
 
-        <li class="pub-item">
-          <div class="pub-title">
-            <a href="https://doi.org/10.1016/j.ins.2024.121518" target="_blank">
-              A two-stage distributionally robust maximum expert consensus model with asymmetric costs and risk aversion
-            </a>
-          </div>
-          <div class="pub-authors"><strong>Ma Y</strong>, Ji Y, Qu S, Li Y</div>
-          <div class="pub-venue">
-            <em>Information Sciences</em>, 2025, 689: 121518
-          </div>
-          <div class="pub-tags">
-            <span class="tag tag-fmsb">FMSB</span>
-            <span class="tag tag-q1">Q1</span>
-          </div>
-        </li>
+          <li class="news-tl-item">
+            <div class="news-tl-icon icon-paper">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 13h8v1.5H8V13zm0 3.5h5v1.5H8V16.5z"/></svg>
+            </div>
+            <span class="news-tl-date date-paper">2025.03</span>
+            <p class="news-tl-text">Paper accepted in <em>Information Sciences</em> — "A two-stage distributionally robust maximum expert consensus model with asymmetric costs and risk aversion."</p>
+          </li>
 
-        <li class="pub-item">
-          <div class="pub-title">
-            <a href="https://doi.org/10.1007/s10726-026-09967-y" target="_blank">
-              A combinational consensus model-based feedback mechanism for group decision-making with uncertain adjustment costs
-            </a>
-          </div>
-          <div class="pub-authors"><strong>Ma Y</strong>, Ji Y</div>
-          <div class="pub-venue">
-            <em>Group Decision and Negotiation</em>, 2026, 35: 10
-          </div>
-          <div class="pub-tags">
-            <span class="tag tag-fmsb">FMSB</span>
-            <span class="tag tag-q1">Q1</span>
-          </div>
-        </li>
+          <li class="news-tl-item">
+            <div class="news-tl-icon icon-paper">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 13h8v1.5H8V13zm0 3.5h5v1.5H8V16.5z"/></svg>
+            </div>
+            <span class="news-tl-date date-paper">2024.12</span>
+            <p class="news-tl-text">Paper accepted in <em>Information Fusion</em> — "Maximum expert consensus model with uncertain adjustment costs for social network group decision making."</p>
+          </li>
 
-      </ol>
+          <!-- hidden initially -->
+          <li class="news-tl-item news-extra">
+            <div class="news-tl-icon icon-award">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <span class="news-tl-date date-award">2024.05</span>
+            <p class="news-tl-text">Received <strong>Third Prize</strong> at the 5th Annual Academic Conference of the Intelligent Decision and Game Branch of the Chinese Society of Optimization, Overall Planning Law and Economic Mathematics — Guilin.</p>
+          </li>
 
-      <h3 class="subsection-title">Working Papers</h3>
-      <ul class="working-papers">
-        <li>
-          How to manage fairness and efficiency: a bi-objective consensus model with linear-quadratic costs.
-        </li>
-        <li>
-          Failure modes and effect analysis for social networks: a risk-based feedback mechanism with distributionally robust consensus model.
-        </li>
-      </ul>
-    </section>
+          <li class="news-tl-item news-extra">
+            <div class="news-tl-icon icon-paper">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 13h8v1.5H8V13zm0 3.5h5v1.5H8V16.5z"/></svg>
+            </div>
+            <span class="news-tl-date date-paper">2024.03</span>
+            <p class="news-tl-text">Paper accepted in <em>Applied Soft Computing</em> — "Robust maximum expert consensus model with adjustment path under uncertain environment."</p>
+          </li>
 
-    <!-- ===== EDUCATION ===== -->
-    <section id="education">
-      <h2>Education</h2>
-      <div class="timeline">
+          <li class="news-tl-item news-extra">
+            <div class="news-tl-icon icon-paper">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 13h8v1.5H8V13zm0 3.5h5v1.5H8V16.5z"/></svg>
+            </div>
+            <span class="news-tl-date date-paper">2023.08</span>
+            <p class="news-tl-text">Paper accepted in <em>Information Fusion</em> — "The robust maximum expert consensus model with risk aversion."</p>
+          </li>
 
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <div class="tl-date">Jun 2024 – Present</div>
-            <div class="tl-degree">Ph.D. Candidate, Management Science and Engineering</div>
-            <div class="tl-school">Shanghai University (SHU)</div>
-            <div class="tl-note">Anticipated graduation: June 2027</div>
-          </div>
+          <li class="news-tl-item news-extra">
+            <div class="news-tl-icon icon-position">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <span class="news-tl-date date-position">2023.12</span>
+            <p class="news-tl-text">Attended the Editor-in-Chief Forum on New Developments in Operations Research and Data Science — Nanjing.</p>
+          </li>
+
+          <li class="news-tl-item news-extra">
+            <div class="news-tl-icon icon-position">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <span class="news-tl-date date-position">2023.05</span>
+            <p class="news-tl-text">Attended the 4th Annual Academic Conference of the Intelligent Decision and Game Branch of the Chinese Society of Optimization, Overall Planning and Economic Mathematics — Jinan.</p>
+          </li>
+
+        </ul>
+        <button class="show-more-btn" id="news-toggle">Show more ↓</button>
+      </section>
+
+      <!-- PUBLICATIONS — newest first -->
+      <section id="publications">
+        <h2>Publications</h2>
+        <p class="note">* denotes corresponding author</p>
+
+        <ol class="pub-list">
+
+          <!-- 1. GDN 2026 -->
+          <li class="pub-item">
+            <div class="pub-row">
+              <div class="pub-main">
+                <div class="pub-title">
+                  <a href="https://doi.org/10.1007/s10726-026-09967-y" target="_blank">
+                    A combinational consensus model-based feedback mechanism for group decision-making with uncertain adjustment costs
+                  </a>
+                </div>
+                <div class="pub-authors"><strong>Ma Y</strong>, Ji Y</div>
+                <div class="pub-venue"><em>Group Decision and Negotiation</em>, 2026, 35: 10</div>
+              </div>
+              <div class="pub-actions">
+                <button class="abstract-btn">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 13h8v1.5H8V13zm0 3.5h5v1.5H8V16.5z"/></svg>
+                  <span class="btn-text">Abstract</span>
+                </button>
+                <a href="https://doi.org/10.1007/s10726-026-09967-y" target="_blank" class="pub-link">DOI ↗</a>
+              </div>
+            </div>
+            <div class="abstract-panel">
+              [The minimum cost consensus model (MCCM) and maximum expert consensus model (MECM), with different objectives, are two commonly used optimization models to enhance the consensus reaching process (CRP) in group decision-making (GDM) problems. However, most existing studies examine these models in isolation, with limited exploration of their combined potential to address both resource consumption and decision maker (DM) participation in consensus. Moreover, individual behaviors, such as tolerance and compromise, along with uncertain adjustment costs, significantly influence cost consumption during CRP, which is worthy of investigation. To address these issues, this paper proposes a combinational consensus model-based feedback mechanism for GDM with uncertain adjustment costs. First, the robust MCCM (RMCCM) with limited tolerance and compromise level is proposed. Then, the robust MECM (RMECM) is constructed to maximize the number of DMs within consensus. The two proposed robust models constitute the feedback mechanism, where the RMCCM provides a benchmark budget for the RMECM, while the RMECM enhances the quality of consensus. Finally, the feasibility of the proposed mechanism is demonstrated through a case study, with sensitivity and comparative analyses further validating its effectiveness.]
+            </div>
+          </li>
+
+          <!-- 2. Information Sciences 2025 -->
+          <li class="pub-item">
+            <div class="pub-row">
+              <div class="pub-main">
+                <div class="pub-title">
+                  <a href="https://doi.org/10.1016/j.ins.2024.121518" target="_blank">
+                    A two-stage distributionally robust maximum expert consensus model with asymmetric costs and risk aversion
+                  </a>
+                </div>
+                <div class="pub-authors"><strong>Ma Y</strong>, Ji Y, Qu S, Li Y</div>
+                <div class="pub-venue"><em>Information Sciences</em>, 2025, 689: 121518</div>
+              </div>
+              <div class="pub-actions">
+                <button class="abstract-btn">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 13h8v1.5H8V13zm0 3.5h5v1.5H8V16.5z"/></svg>
+                  <span class="btn-text">Abstract</span>
+                </button>
+                <a href="https://doi.org/10.1016/j.ins.2024.121518" target="_blank" class="pub-link">DOI ↗</a>
+              </div>
+            </div>
+            <div class="abstract-panel">
+              [The maximum expert consensus model (MECM) emerges as a widely used consensus optimization model in group decision making (GDM). However, contemporary complexities in decision-making environment lead to the asymmetry and uncertainty of adjustment costs of decision-makers (DMs), which are critical during the consensus reaching process (CRP). Additionally, the risks emerging with the uncertainty during CRP should also be analyzed. Therefore, this paper focuses on developing the two-stage distributionally robust MECM (DRO-MECM) with asymmetric adjustment costs under an uncertain environment to improve the CRP. Specifically, we propose a MECM with asymmetric costs. Moreover, we build the two-stage DRO-MECM based on the mean-CVaR under two uncertain scenarios, allowing it to manage uncertain costs effectively while considering the risk preferences of DMs. The first stage aims to maximize the number of DM within consensus and the second stage seeks to minimize the consensus cost. Finally, the applicability of the proposed models is demonstrated by applying them to the allocation of healthcare and security capacity enhancement subsidy funds in China. The efficiency of the models is further corroborated by sensitivity analysis and comparison analysis.]
+            </div>
+          </li>
+
+          <!-- 3. Information Fusion 2024 -->
+          <li class="pub-item">
+            <div class="pub-row">
+              <div class="pub-main">
+                <div class="pub-title">
+                  <a href="https://doi.org/10.1016/j.inffus.2024.102403" target="_blank">
+                    Maximum expert consensus model with uncertain adjustment costs for social network group decision making
+                  </a>
+                </div>
+                <div class="pub-authors"><strong>Ma Y</strong>, Ji Y, Qu D, Zhang X, Wang L</div>
+                <div class="pub-venue"><em>Information Fusion</em>, 2024, 108: 102403</div>
+              </div>
+              <div class="pub-actions">
+                <button class="abstract-btn">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 13h8v1.5H8V13zm0 3.5h5v1.5H8V16.5z"/></svg>
+                  <span class="btn-text">Abstract</span>
+                </button>
+                <a href="https://doi.org/10.1016/j.inffus.2024.102403" target="_blank" class="pub-link">DOI ↗</a>
+              </div>
+            </div>
+            <div class="abstract-panel">
+              [In the realm of group decision making (GDM), the maximum expert consensus model (MECM) emerges as a potent tool for consensus optimization. The complexity of decision-making environment leads to the uncertainty of adjustment costs and the intricate social relationships between decision makers (DMs). Therefore, this paper aims to develop the MECM that integrates both social relationships and uncertain adjustment costs to support social network group decision making (SNGDM) problems. Specifically, we propose a MECM with quadratic cost that can more accurately reflect DMs' sensitivity for opinion adjustment. Additionally, we adopt an opinion modification mechanism based on the information obtained from the social network. The paper also develops the robust MECM (RMECM) to handle the uncertainty of the unit adjustment cost under three uncertain scenarios. Finally, the efficiency of the proposed models is demonstrated by applying them to the agricultural insurance premiums subsidy policymaking in China, further substantiated by sensitivity analysis and comparative analysis showcasing their robust performance.]
+            </div>
+          </li>
+
+          <!-- 4. Applied Soft Computing 2024 -->
+          <li class="pub-item">
+            <div class="pub-row">
+              <div class="pub-main">
+                <div class="pub-title">
+                  <a href="https://doi.org/10.1016/j.asoc.2024.111430" target="_blank">
+                    Robust maximum expert consensus model with adjustment path under uncertain environment
+                  </a>
+                </div>
+                <div class="pub-authors"><strong>Ma Y</strong>, Ji Y, Wijekoon C</div>
+                <div class="pub-venue"><em>Applied Soft Computing</em>, 2024, 155: 111430</div>
+              </div>
+              <div class="pub-actions">
+                <button class="abstract-btn">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 13h8v1.5H8V13zm0 3.5h5v1.5H8V16.5z"/></svg>
+                  <span class="btn-text">Abstract</span>
+                </button>
+                <a href="https://doi.org/10.1016/j.asoc.2024.111430" target="_blank" class="pub-link">DOI ↗</a>
+              </div>
+            </div>
+            <div class="abstract-panel">
+              [The maximum expert consensus model (MECM) is a commonly used consensus model in group decision making (GDM). In traditional MECM, the consensus constraints are not fully considered and the adjustment cost of decision maker (DM) is certain. Moreover, directing the DM's opinion in a visual path is seldom considered in the consensus reaching process (CRP) of MECM. Inspired by these issues, this paper first proposed two MECMs with different types of consensus constraints. Then, this paper incorporated an adjustment path into MECM by using feedback coefficients that can prevent opinions from being overadjusted. Furthermore, the robust MECM (RMECM) is developed to address the uncertainty of unit adjustment cost under three uncertainty sets. Finally, the feasibility of the proposed models is verified by applying them to the allocation of special funds in the Chinese film industry, which is a large-scale group decision making (LSGDM) problem. The sensitivity analysis and comparative analysis are also conducted to show the efficiency of the proposed models.]
+            </div>
+          </li>
+
+          <!-- 5. Information Fusion 2023 — Highly Cited -->
+          <li class="pub-item">
+            <div class="pub-row">
+              <div class="pub-main">
+                <div class="pub-title">
+                  <a href="https://doi.org/10.1016/j.inffus.2023.101866" target="_blank">
+                    The robust maximum expert consensus model with risk aversion
+                  </a>
+                </div>
+                <div class="pub-authors">Ji Y, <strong>Ma Y</strong>*</div>
+                <div class="pub-venue"><em>Information Fusion</em>, 2023, 99: 101866</div>
+                <span class="tag tag-hc">
+                  <svg class="hc-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  Highly Cited
+                </span>
+              </div>
+              <div class="pub-actions">
+                <button class="abstract-btn">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 13h8v1.5H8V13zm0 3.5h5v1.5H8V16.5z"/></svg>
+                  <span class="btn-text">Abstract</span>
+                </button>
+                <a href="https://doi.org/10.1016/j.inffus.2023.101866" target="_blank" class="pub-link">DOI ↗</a>
+              </div>
+            </div>
+            <div class="abstract-panel">
+              [The maximum expert consensus model (MECM) is an effective model for achieving consensus during the consensus reaching process (CRP) in group decision making (GDM). However, previous literature on MECM has focused only on the resources in CRP and ignored the uncertainty and the risks resulting from the unpredictable decision environment. To address these issues, this paper constructs novel MECMs that can handle both the uncertainty and risks emerging in the CRP. First, the risk maximum expert consensus model (RMECM) is proposed based on the mean-variance (MV) theory. Then, the novel robust risk maximum expert consensus model (R-RMECM) is developed to address the uncertainty caused by the estimation error of the mean and covariance matrix of unit adjustment cost. Additionally, the R-RMECMs are developed under three uncertain scenarios to comprehensively make the models closer to the real decision environment. Finally, the proposed models are verified by applying them to a specific example of the new energy vehicle subsidy policy negotiation and the sensitivity analysis is also conducted.]
+            </div>
+          </li>
+
+        </ol>
+      </section>
+
+      <!-- WORKING PAPERS -->
+      <section id="working-papers">
+        <h2>Working Papers</h2>
+
+        <ol class="pub-list pub-list-wp">
+
+          <li class="pub-item pub-item-wp">
+            <div class="pub-title">
+              How to manage fairness and efficiency: a bi-objective consensus model with linear-quadratic costs
+            </div>
+            <div class="pub-authors"><strong>Ma Y</strong>, Ji Y</div>
+          </li>
+
+          <li class="pub-item pub-item-wp">
+            <div class="pub-title">
+              Failure modes and effect analysis for social networks: a risk-based feedback mechanism with distributionally robust consensus model
+            </div>
+            <div class="pub-authors"><strong>Ma Y</strong>, Ji Y</div>
+          </li>
+
+        </ol>
+      </section>
+
+      <!-- AWARDS -->
+      <section id="awards">
+        <h2>Funding, Awards &amp; Honours</h2>
+
+        <!-- 1. Funding — featured -->
+        <div class="award-group award-group--funding">
+          <h3 class="award-group-title">
+            <svg viewBox="0 0 24 24" class="ag-icon">
+  <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+</svg>
+            Funding &amp; Fellowships
+          </h3>
+          <ul class="award-list">
+            <li>
+              <strong>China Scholarship Council (CSC) Fellowship</strong>
+              <span class="award-meta">Sep 2025 – Sep 2027</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <div class="tl-date">Sep 2022 – Jun 2024</div>
-            <div class="tl-degree">M.Sc., Management Science and Engineering</div>
-            <div class="tl-school">Shanghai University (SHU)</div>
-          </div>
+        <!-- 2. Conference Prizes -->
+        <div class="award-group award-group--prizes">
+          <h3 class="award-group-title">
+            <svg viewBox="0 0 24 24" class="ag-icon">
+  <path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V18H9v2h6v-2h-2v-2.1a5.01 5.01 0 0 0 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.86 10.4 5 9.29 5 8zm14 0c0 1.29-.86 2.4-2 2.82V7h2v1z"/>
+</svg>
+            Conference Prizes
+          </h3>
+          <ul class="award-list">
+            <li>
+              <strong>Third Prize</strong>
+              <span class="award-meta">6th Annual Academic Conference of the Intelligent Decision and Game Branch, Chinese Society of Optimization — Hefei, May 2025</span>
+            </li>
+            <li>
+              <strong>Third Prize</strong>
+              <span class="award-meta">5th Annual Academic Conference of the Intelligent Decision and Game Branch, Chinese Society of Optimization — Guilin, May 2024</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <div class="tl-date">Sep 2018 – Jun 2022</div>
-            <div class="tl-degree">B.Sc., Management Science</div>
-            <div class="tl-school">University of Shanghai for Science and Technology (USST)</div>
-          </div>
+        <!-- 3. Scholarships -->
+        <div class="award-group award-group--scholar">
+          <h3 class="award-group-title">
+            <svg viewBox="0 0 24 24" class="ag-icon">
+  <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+</svg>
+            Scholarships
+          </h3>
+          <ul class="award-list">
+            <li>
+              <strong>First-class Scholarship</strong>
+              <span class="award-meta">Shanghai University, 2024</span>
+            </li>
+            <li>
+              <strong>Second-class Scholarship</strong>
+              <span class="award-meta">Shanghai University, 2023</span>
+            </li>
+            <li>
+              <strong>First-class Scholarship</strong>
+              <span class="award-meta">University of Shanghai for Science and Technology, 2020</span>
+            </li>
+            <li>
+              <strong>Second-class Scholarship</strong>
+              <span class="award-meta">University of Shanghai for Science and Technology, 2019 &amp; 2020</span>
+            </li>
+          </ul>
         </div>
 
-      </div>
-    </section>
-
-    <!-- ===== AWARDS ===== -->
-    <section id="awards">
-      <h2>Funding, Awards &amp; Honours</h2>
-
-      <h3 class="subsection-title">Funding &amp; Fellowships</h3>
-      <ul class="award-list">
-        <li><strong>China Scholarship Council (CSC) Fellowship</strong>, Sep 2025 – Sep 2027</li>
-      </ul>
-
-      <h3 class="subsection-title">Conference Prizes</h3>
-      <ul class="award-list">
-        <li>Third Prize, 6th Annual Academic Conference, Chinese Society of Optimisation — Hefei, May 2025</li>
-        <li>Third Prize, 5th Annual Academic Conference, Chinese Society of Optimisation — Guilin, May 2024</li>
-      </ul>
-
-      <h3 class="subsection-title">Other Honours</h3>
-      <ul class="award-list">
-        <li>Second Prize, 17th "Challenge Cup" College Students' Extracurricular Academic Science and Technology Works Competition, Mar 2021</li>
-        <li>Outstanding Student Award, University of Shanghai for Science and Technology, Mar 2019</li>
-        <li>Outstanding Volunteer, 3rd Shanghai College Student Safety Knowledge Competition, Dec 2018</li>
-      </ul>
-
-      <h3 class="subsection-title">Scholarships</h3>
-      <ul class="award-list">
-        <li>First-class Scholarship, Shanghai University, 2024</li>
-        <li>Second-class Scholarship, Shanghai University, 2023</li>
-        <li>First-class Scholarship, University of Shanghai for Science and Technology, 2020</li>
-        <li>Second-class Scholarship, University of Shanghai for Science and Technology, 2019 &amp; 2020</li>
-      </ul>
-    </section>
-
-    <!-- ===== SKILLS ===== -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div>
-          <h3>Programming &amp; Computation</h3>
-          <p>MATLAB &nbsp;|&nbsp; Python</p>
+        <!-- 4. Other Honours -->
+        <div class="award-group award-group--honours">
+          <h3 class="award-group-title">
+            <svg viewBox="0 0 24 24" class="ag-icon">
+  <path d="M12 1l2.39 5.91L21 8.18l-5 4.73 1.18 6.82L12 16.9l-5.18 2.83L8 12.91 3 8.18l6.61-1.27L12 1z"/>
+</svg>
+            Other Honours
+          </h3>
+          <ul class="award-list">
+            <li>
+              <strong>Second Prize</strong>
+              <span class="award-meta">17th "Challenge Cup" College Students' Extracurricular Academic Science and Technology Works Competition, Mar 2021</span>
+            </li>
+            <li>
+              <strong>Outstanding Student Award</strong>
+              <span class="award-meta">University of Shanghai for Science and Technology, Mar 2019</span>
+            </li>
+            <li>
+              <strong>Outstanding Volunteer</strong>
+              <span class="award-meta">3rd Shanghai College Student Safety Knowledge Competition, Dec 2018</span>
+            </li>
+          </ul>
         </div>
-        <div>
-          <h3>Scientific Writing &amp; Tools</h3>
-          <p>LaTeX &nbsp;|&nbsp; MS Office (Word, Excel, PowerPoint)</p>
-        </div>
-        <div>
-          <h3>Languages</h3>
-          <p>Mandarin Chinese (native) &nbsp;|&nbsp; English (professional)</p>
-        </div>
-      </div>
-    </section>
 
+      </section>
+
+    </div>
   </main>
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <div class="container">
-      <p>Yifan Ma &nbsp;&bull;&nbsp; School of Management, Shanghai University &nbsp;&bull;&nbsp;
-         <a href="mailto:mayifan693@163.com">mayifan693@163.com</a></p>
-      <p class="updated">Last updated: March 2026</p>
+    <div class="container footer-inner">
+      <div class="footer-info">
+        <p class="footer-name">Yifan Ma</p>
+        <p>School of Management, Shanghai University</p>
+        <p><a href="mailto:mayifan693@163.com">mayifan693@163.com</a></p>
+        <p class="updated">Last updated: March 2026</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="mailto:mayifan693@163.com" title="Email">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+          <a href="https://orcid.org/0009-0002-7980-533X" target="_blank" title="ORCID">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.9-1.872 3.9-3.722 0-1.603-1.106-3.722-3.853-3.722h-2.344z"/></svg>
+          </a>
+          <a href="https://scholar.google.com/citations?user=Wcre0kgAAAAJ" target="_blank" title="Google Scholar">
+            <svg viewBox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5 12 0z"/></svg>
+          </a>
+          <a href="Yifan_Ma_CV.pdf" target="_blank" title="CV">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+          </a>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Back to top</button>
+      </div>
     </div>
   </footer>
 
-  <!-- ===== CITATION FETCHER ===== -->
   <script>
-    (async function fetchCitations() {
-      const items = document.querySelectorAll('.pub-item[data-doi]');
-      let idx = 1;
-      for (const item of items) {
-        const doi = item.getAttribute('data-doi');
-        const badge = document.getElementById('cite-' + idx);
-        idx++;
-        if (!badge) continue;
+    // ── Abstract toggles ──────────────────────────────────────
+    document.querySelectorAll('.abstract-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const panel = btn.closest('.pub-item').querySelector('.abstract-panel');
+        const isOpen = panel.classList.toggle('open');
+        btn.querySelector('.btn-text').textContent = isOpen ? 'Hide' : 'Abstract';
+        btn.classList.toggle('open', isOpen);
+      });
+    });
+
+    // ── News show more / show less ────────────────────────────
+    const newsExtras = document.querySelectorAll('.news-extra');
+    const newsToggle = document.getElementById('news-toggle');
+    if (newsToggle && newsExtras.length) {
+      newsToggle.addEventListener('click', () => {
+        const expanded = newsToggle.dataset.expanded === 'true';
+        newsExtras.forEach(el => {
+          el.style.display = expanded ? 'none' : 'block';
+        });
+        newsToggle.textContent = expanded ? 'Show more ↓' : 'Show less ↑';
+        newsToggle.dataset.expanded = String(!expanded);
+      });
+    }
+
+    // ── Active nav link via IntersectionObserver ─────────────────
+    (function () {
+      const navLinks = document.querySelectorAll('.nav-links a');
+      const targets  = ['about', 'news', 'publications', 'working-papers', 'awards']
+        .map(id => document.getElementById(id)).filter(Boolean);
+
+      const activate = id => {
+        navLinks.forEach(a => {
+          a.classList.toggle('nav-active', a.getAttribute('href') === '#' + id);
+        });
+      };
+
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) activate(e.target.id); });
+      }, { rootMargin: '-10% 0px -82% 0px', threshold: 0 });
+
+      targets.forEach(t => obs.observe(t));
+    })();
+
+    // ── Stats: auto-fetch citations & h-index from Semantic Scholar ──
+    const DOIS = [
+      '10.1016/j.inffus.2023.101866',
+      '10.1016/j.asoc.2024.111430',
+      '10.1016/j.inffus.2024.102403',
+      '10.1016/j.ins.2024.121518',
+      '10.1007/s10726-026-09967-y'
+    ];
+
+    (async function updateStats() {
+      const counts = [];
+      for (const doi of DOIS) {
         try {
           const res = await fetch(
             `https://api.semanticscholar.org/graph/v1/paper/DOI:${doi}?fields=citationCount`,
-            { headers: { 'Accept': 'application/json' } }
+            { headers: { Accept: 'application/json' } }
           );
-          if (!res.ok) throw new Error('not found');
-          const data = await res.json();
-          const count = data.citationCount ?? null;
-          if (count !== null) {
-            badge.innerHTML = `&#128196; ${count} Citation${count !== 1 ? 's' : ''}`;
-          } else {
-            badge.remove();
-          }
-        } catch {
-          badge.remove();
-        }
-        // small delay to respect API rate limits
-        await new Promise(r => setTimeout(r, 300));
+          if (!res.ok) continue;
+          const { citationCount } = await res.json();
+          if (citationCount != null) counts.push(citationCount);
+        } catch { /* skip on error */ }
+        await new Promise(r => setTimeout(r, 400));
       }
+      if (!counts.length) return;
+
+      const total = counts.reduce((a, b) => a + b, 0);
+      const sorted = [...counts].sort((a, b) => b - a);
+      let h = 0;
+      for (let i = 0; i < sorted.length; i++) {
+        if (sorted[i] >= i + 1) h = i + 1; else break;
+      }
+
+      const citEl = document.getElementById('stat-citations');
+      const hEl   = document.getElementById('stat-hindex');
+      if (citEl) citEl.textContent = total;
+      if (hEl)   hEl.textContent   = h;
     })();
   </script>
 
