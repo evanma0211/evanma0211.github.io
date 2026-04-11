@@ -125,7 +125,7 @@ a:hover { color: var(--navy); text-decoration: underline; }
   display: grid;
   grid-template-columns: 300px 1fr;
   gap: 4.5rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 /* — Left column — */
@@ -136,7 +136,7 @@ a:hover { color: var(--navy); text-decoration: underline; }
   text-align: center;
   background: rgba(44,95,138,0.038);
   border-radius: 12px;
-  padding-bottom: 1.6rem;
+  padding: 1.8rem 1.1rem 1.6rem;
 }
 
 .avatar {
@@ -144,7 +144,7 @@ a:hover { color: var(--navy); text-decoration: underline; }
   height: 310px;
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.2rem;
   border: 3px solid var(--border);
   box-shadow: 0 4px 24px rgba(0,0,0,0.1);
   flex-shrink: 0;
@@ -196,27 +196,32 @@ a:hover { color: var(--navy); text-decoration: underline; }
 .hero-contact {
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
+  gap: 0;
   width: 100%;
-  margin-bottom: 1.4rem;
-  align-items: flex-start;
+  margin-top: auto;
+  margin-bottom: 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(44,95,138,0.12);
+  align-items: stretch;
 }
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 0.55rem;
-  font-size: 0.82rem;
+  gap: 0.65rem;
+  font-size: 0.81rem;
   color: var(--muted);
   text-decoration: none;
-  transition: color 0.2s;
-  line-height: 1.4;
+  transition: color 0.18s, background 0.18s;
+  line-height: 1;
+  padding: 0.48rem 0.45rem;
+  border-radius: 5px;
 }
-.contact-item:hover { color: var(--blue); text-decoration: none; }
+.contact-item:hover { color: var(--blue); background: rgba(44,95,138,0.05); text-decoration: none; }
 .contact-icon {
   width: 15px; height: 15px;
   fill: var(--blue);
   flex-shrink: 0;
-  opacity: 0.7;
+  opacity: 0.55;
 }
 
 /* Status card */

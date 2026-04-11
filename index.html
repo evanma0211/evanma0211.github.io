@@ -86,7 +86,7 @@
             </p>
             <p>
               Supported by the <strong>China Scholarship Council Fellowship</strong> (2025–2027),
-              I am currently a visiting phd student at the
+              I am currently a visiting researcher at the
               <a href="https://www.ujaen.es/" target="_blank">University of Jaén</a>, Spain,
               under the joint supervision of
               Prof. <a href="https://www.ujaen.es/departamentos/dinformatica/contactos/martinez-lopez-luis" target="_blank">Luis Martínez López</a>,
@@ -565,6 +565,9 @@
       }
     }
 
+    // Always start collapsed
+    collapseNews();
+
     if (newsToggle && newsExtras.length) {
       newsToggle.addEventListener('click', () => {
         const expanded = newsToggle.dataset.expanded === 'true';
@@ -576,9 +579,12 @@
       });
     }
 
-    // Collapse news extras whenever the News nav link is clicked
+    // Collapse news extras whenever the News nav link is clicked or hash changes
     document.querySelector('.nav-links a[href="#news"]')
       ?.addEventListener('click', collapseNews);
+    window.addEventListener('hashchange', () => {
+      if (location.hash === '#news') collapseNews();
+    });
 
     // ── Active nav link via IntersectionObserver ─────────────────
     (function () {
