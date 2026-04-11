@@ -167,7 +167,7 @@ a:hover { color: var(--navy); text-decoration: underline; }
 }
 .hero-chinese {
   display: block;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   color: var(--muted);
   letter-spacing: 0.1em;
   margin-bottom: 0.9rem;
@@ -208,7 +208,7 @@ a:hover { color: var(--navy); text-decoration: underline; }
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  font-size: 0.81rem;
+  font-size: 0.9rem;
   color: var(--muted);
   text-decoration: none;
   transition: color 0.18s, background 0.18s;
@@ -249,7 +249,7 @@ a:hover { color: var(--navy); text-decoration: underline; }
 }
 .status-val {
   display: block;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--navy);
   line-height: 1.3;
