@@ -66,16 +66,18 @@ a:hover { color: var(--navy); text-decoration: underline; }
   text-decoration: none;
   letter-spacing: 0.03em;
   padding: 0.42rem 0;
-  flex-shrink: 0;
+  justify-self: center;
 }
 .nav-brand:hover { color: #fff; text-decoration: none; }
 .nav-links {
   display: flex;
   align-items: center;
-  border-left: 1px solid rgba(255,255,255,0.15);
-  margin-left: 1.5rem;
-  padding-left: 0.25rem;
+  justify-content: flex-start;
+  border-left: none;
+  margin-left: 0;
+  padding-left: 0;
   gap: 0.05rem;
+  justify-self: start;
 }
 .nav-links a {
   color: rgba(255,255,255,0.55);
